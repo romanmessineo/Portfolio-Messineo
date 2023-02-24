@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #d225b3 21.43%,
+    #6e324a 50.63%,
+    #0f950d 100%,
+    #11b70e 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  transition: 0.5s all;
+  box-shadow: 1px 1px 1px #000;
+  }
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+  transform: scale(106%);
+  box-shadow: none;
+  ;
+}
+/* background-image: linear-gradient(to right top, #d225b3, #ff0066, #ff7000, #cab800, #16eb12); */
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    text-shadow: 1px 1px 1px #00000085;
+  }
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
+
+.gradient-background {
+  background: linear-gradient(84deg,darkviolet,#161b12,#7fff00);
+  background-size: 180% 180%;
+  animation: gradient-animation 24s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Estilos para la barra de desplazamiento en el navegador */
+::-webkit-scrollbar {
+  width: 10px; /* ancho de la barra de desplazamiento */
+}
+
+/* Estilos para el "palo" de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #4caf50; /* color del palo de la barra */
+  border-radius: 10px; /* borde redondeado del palo */
+}
+
+/* Estilos para el fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: #ccc; /* color del fondo de la barra */
+}
