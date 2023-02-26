@@ -5,10 +5,10 @@
 .btn {
   background: linear-gradient(
     92.23deg,
-    #d225b3 21.43%,
-    #6e324a 50.63%,
-    #0f950d 100%,
-    #11b70e 117.04%
+    #ff56f6 21.43%,
+    #b936ee 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
   );
   box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
   transition: 0.5s all;
@@ -37,6 +37,7 @@
     #b936ee 100%,
     #ff56f6 117.04%
   );
+  
 }
 
 .active {
@@ -57,6 +58,10 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
     text-shadow: 1px 1px 1px #00000085;
   }
+  .p{
+    text-shadow: 1px 1px 1px #00000085;
+  }
+
   .btn {
     @apply rounded-full font-primary text-white font-medium;
   }
@@ -95,18 +100,7 @@
   }
 }
 
-/* Estilos para la barra de desplazamiento en el navegador */
-::-webkit-scrollbar {
-  width: 10px; /* ancho de la barra de desplazamiento */
+body {
+  height: 100%;
 }
 
-/* Estilos para el "palo" de la barra de desplazamiento */
-::-webkit-scrollbar-thumb {
-  background-color: #4caf50; /* color del palo de la barra */
-  border-radius: 10px; /* borde redondeado del palo */
-}
-
-/* Estilos para el fondo de la barra de desplazamiento */
-::-webkit-scrollbar-track {
-  background-color: #ccc; /* color del fondo de la barra */
-}

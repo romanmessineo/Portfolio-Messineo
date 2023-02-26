@@ -2,19 +2,17 @@
   border-radius: 2px;
   transition: 0.5s;
   /* background-image: url(../assets/backgroundAnimated.gif);  */
-  
 }
 
-.imgHover:hover{
-  transform:scale(102%);
-}    
+.imgHover:hover {
+  transform: scale(102%);
+}
 
-.social{
+.social {
   transition: 0.5s;
- }
+}
 
-.social:hover{
-  transform:scale(110%);
+.social:hover {
+  transform: scale(110%);
   color: chartreuse;
 }
-

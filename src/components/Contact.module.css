@@ -1,0 +1,11 @@
+/* // En tu archivo de estilos CSS: */
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 768px; /* ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* centra el contenedor en la página */
+}
