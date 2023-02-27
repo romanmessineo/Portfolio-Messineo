@@ -12,8 +12,6 @@ import { fadeIn } from "../variants";
 import Img1 from "../assets/whatsappqrlink.png";
 
 const Contact = () => {
-
-  
   const share = async (event) => {
     event.preventDefault();
     try {
@@ -27,7 +25,6 @@ const Contact = () => {
       console.log("Error al compartir contenido", error);
     }
   };
-  
 
   const form = useRef();
 
@@ -39,19 +36,29 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-  
+
     // Validar si los campos están vacíos
-    if (!formValues.user_name || !formValues.user_email || !formValues.message) {
+    if (
+      !formValues.user_name ||
+      !formValues.user_email ||
+      !formValues.message
+    ) {
       Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'complete todo los campos por favor',
+        icon: "error",
+        title: "Oops...",
+        text: "complete todo los campos por favor",
         timer: 2000,
-        });
+      });
       return;
     }
-  
-    emailjs.sendForm("service_fpd7h4b", "template_x3nskns", form.current, "QkOLhZ8nm-s9HTM43")
+
+    emailjs
+      .sendForm(
+        "service_fpd7h4b",
+        "template_x3nskns",
+        form.current,
+        "QkOLhZ8nm-s9HTM43"
+      )
       .then(
         (result) => {
           Swal.fire({
@@ -169,7 +176,7 @@ const Contact = () => {
                 <div className="flex p-1 md:px-12 max-h-[400px] max-w-[360px] m-auto">
                   <img
                     alt="gallery"
-                    className="block w-full rounded-lg object-fit object-center transform transition duration-500 hover:scale-110 cursor-pointer"
+                    className="block w-full rounded-lg object-fit object-center transform transition duration-500 lg:hover:scale-110 cursor-pointer"
                     src={Img1}
                   />
                 </div>
@@ -226,9 +233,7 @@ const Contact = () => {
             </button>
           </motion.form>
         </div>
-        
       </div>
-      
     </section>
   );
 };

@@ -4,14 +4,35 @@ import { fadeIn } from "../variants";
 import Img1 from "../assets/desarrollo web.png";
 import Img2 from "../assets/JavaScript.png";
 import Img3 from "../assets/react.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import VisibilitySensor from "react-visibility-sensor";
 
 const Services = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+
+
+
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [fullscreenImage, setFullscreenImage] = useState(null);
 
   const [isVisible, setIsVisible] = useState(false);
+
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+  
+    window.addEventListener("resize", handleResize);
+  
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  
+
+
+
 
   const handleVisibilityChange = (isVisible) => {
     setIsVisible(isVisible);
@@ -24,22 +45,32 @@ const Services = () => {
 
         <div className="overflow-hidden">
           <div className="container mx-auto px-2 py-2 lg:pt-4 ">
-          <div className="flex ">
+          <motion.div 
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="flex ">
           <div className="py-12 font-titleFont flex flex-col gap-2">
                 <h2 className="h2 leading-tight text-green-500 text-center lg:text-left">
                 Habilidades
                 </h2>
-                <p className="h3 mb-[-10px] text-sm uppercase font-medium  ">
+                <p className="h2 mb-[-10px] text-sm uppercase font-medium  ">
                 Soy un profesional comunicativo y eficiente en la resolución creativa de problemas, con un enfoque en identificar oportunidades de ahorro de costos para la empresa o cliente. Utilizo mi pensamiento crítico para tomar decisiones informadas y estoy comprometido con la mejora continua y la innovación.
                   </p>
               </div>
             
-          </div>      
-            <p className="h3 text-3xl md:text-4xl font-bold text-center">
+          </motion.div>      
+
+            <motion.p 
+            variants={fadeIn("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="h3 pb-0 text-3xl md:text-4xl font-bold text-center">
 
               Certificados
-            </p>
-
+            </motion.p>
             {/* img coder */}
             <div className="flex flex-col gap-y-8 md:flex-row items-center lg:gap-x-12 ">
               <motion.div
@@ -52,7 +83,7 @@ const Services = () => {
                 <div className="w-full p-1 md:p-1">
                   <img
                     alt="gallery"
-                    className="block h-full w-full rounded-lg object-cover object-center transform transition duration-500 hover:scale-110 cursor-pointer"
+                    className="block h-full w-full rounded-lg object-cover object-center transform transition duration-500 lg:hover:scale-110 cursor-pointer"
                     src={Img1}
                     onClick={() => {
                       setFullscreenImage(Img1);
@@ -71,7 +102,7 @@ const Services = () => {
                 <div className="w-full p-1 md:p-1">
                   <img
                     alt="gallery"
-                    className="block h-full w-full rounded-lg object-cover object-center transform transition duration-500 hover:scale-110 cursor-pointer"
+                    className="block h-full w-full rounded-lg object-cover object-center transform transition duration-500 lg:hover:scale-110 cursor-pointer"
                     src={Img2}
                     onClick={() => {
                       setFullscreenImage(Img2);
@@ -90,7 +121,7 @@ const Services = () => {
                 <div className="w-full p-1 md:p-1">
                   <img
                     alt="gallery"
-                    className="block h-full w-full rounded-lg object-cover object-center transform transition duration-500 hover:scale-110 cursor-pointer"
+                    className="block h-full w-full rounded-lg object-cover object-center transform transition duration-500 lg:hover:scale-110 cursor-pointer"
                     src={Img3}
                     onClick={() => {
                       setFullscreenImage(Img3);
@@ -100,7 +131,7 @@ const Services = () => {
                 </div>
               </motion.div>
 
-              {isFullscreen && (
+              {!isMobile && isFullscreen && (
                 <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center z-50">
                   <div
                     className="absolute top-0 left-0 w-full h-full bg-black opacity-0 transition-opacity duration-500 cursor-pointer"
