@@ -17,7 +17,7 @@ const About = () => {
 
 
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+        <div className="flex flex-col pb-4 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 ">
           {/* img */}
           <motion.div
             variants={fadeIn("right", 0.3)}
@@ -38,7 +38,7 @@ const About = () => {
             className="flex-1"
           >
             <h2 className="h2 text-green-500">Acerca mí.</h2>
-            <h3 className="h3 mb-2">
+            <h3 className="h3 mb-1">
               Como desarrollador, me enfoco en optimizar los procesos para
               obtener resultados superiores en cada uno de mis proyectos.
             </h3>

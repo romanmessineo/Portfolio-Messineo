@@ -39,7 +39,7 @@ const Services = () => {
   };
 
   return (
-    <section className="section bg-contain" id="services">
+    <section className="flex  bg-contain" id="services">
       <div className="container mx-auto">
         {/* galeria */}
 
@@ -85,7 +85,7 @@ const Services = () => {
                 <div className="w-full p-1 md:p-1">
                   <img
                     alt="gallery"
-                    className="block h-full w-full rounded-lg object-cover object-center transform transition duration-500 lg:hover:scale-110 cursor-pointer"
+                    className="block lg:max-h-[350px] h-full w-full rounded-lg object-cover object-center transform transition duration-500 lg:hover:scale-110 cursor-pointer"
                     src={Img1}
                     onClick={() => {
                       setFullscreenImage(Img1);
