@@ -76,7 +76,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 lg:section" id="contact">
+    <section className="pt-16 lg:section" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
@@ -217,7 +217,9 @@ const Contact = () => {
             </button>
           </motion.form>
         </div>
+        
       </div>
+      
     </section>
   );
 };

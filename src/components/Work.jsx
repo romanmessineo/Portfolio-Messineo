@@ -107,10 +107,10 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-10"
+            className="flex-1 flex flex-col  lg:justify-end"
           >
             {/* image */}
-            <div>
+            
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
                 <video controls autoplay className=" w-full h-full">
                   <source src={AppTransp} />
@@ -143,7 +143,7 @@ const Work = () => {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center lg:mb-4">
                 <Link
                   to="https://github.com/romanmessineo/Curso-Javascript/tree/feature-5"
                   target="_blank"
@@ -167,10 +167,10 @@ const Work = () => {
                   </span>
                 </Link>
               </div>
-            </div>
+            
             {/* image */}
 
-            <div>
+           
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
                 {/* video */}
                 <video controls autoplay>
@@ -232,7 +232,7 @@ const Work = () => {
                   </span>
                 </Link>
               </div>
-            </div>
+            
           </motion.div>
         </div>
       </div>
