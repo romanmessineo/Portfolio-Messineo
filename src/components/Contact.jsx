@@ -12,18 +12,22 @@ import { fadeIn } from "../variants";
 import Img1 from "../assets/whatsappqrlink.png";
 
 const Contact = () => {
+
+  
   const share = async (event) => {
     event.preventDefault();
     try {
       await navigator.share({
         title: "Portfolio Roman Messineo",
-        url: "http://localhost:3000/",
+        text: "Desarrollo web",
+        url: "https://messineoroman-portfolio.web.app",
       });
       console.log("Contenido compartido con éxito");
     } catch (error) {
       console.log("Error al compartir contenido", error);
     }
   };
+  
 
   const form = useRef();
 
@@ -35,14 +39,19 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_fpd7h4b",
-        "template_x3nskns",
-        form.current,
-        "QkOLhZ8nm-s9HTM43"
-      )
+  
+    // Validar si los campos están vacíos
+    if (!formValues.user_name || !formValues.user_email || !formValues.message) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'complete todo los campos por favor',
+        timer: 2000,
+        });
+      return;
+    }
+  
+    emailjs.sendForm("service_fpd7h4b", "template_x3nskns", form.current, "QkOLhZ8nm-s9HTM43")
       .then(
         (result) => {
           Swal.fire({
@@ -106,7 +115,7 @@ const Contact = () => {
                       <FaWhatsapp className={styles.social} />
                     </Link>
                     <Link
-                      to="mailto:elcorreoquequieres@correo.com?Subject=Portfolio%20"
+                      to="mailto:messineoroman@gmail.com?Subject=Portfolio%20"
                       target="_blank"
                       title="g-mail"
                     >

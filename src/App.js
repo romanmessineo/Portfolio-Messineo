@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 // components
 import Banner from './components/Banner';
 import Header from './components/Header';
@@ -28,7 +28,7 @@ const App = () => {
       <Contact />
       <FooterBottom/>
 
-      {/* <div className='h-[4000px]'></div> */}
+     {/*  <div className='h-[4000px]'></div>  */}
     </div>
     </BrowserRouter>
   );

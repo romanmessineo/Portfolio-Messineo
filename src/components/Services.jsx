@@ -18,7 +18,7 @@ const Services = () => {
   };
 
   return (
-    <section className="section bg-contain" id="services">
+    <section className="section2 bg-contain" id="services">
       <div className="container mx-auto">
         {/* galeria */}
 

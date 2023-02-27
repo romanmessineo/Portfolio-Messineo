@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .btn {
   background: linear-gradient(
     92.23deg,
@@ -80,7 +81,12 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+  .section2 {
+    @apply  lg:h-screen flex items-center;
+   height: 100%;
+  }
 }
+
 
 /* .gradient-background {
   background: linear-gradient(84deg,darkviolet,#161b12,#7fff00);
@@ -122,11 +128,20 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 1030px) {
+  .navbar-collapse {
+    max-height: none;
+    overflow-x: hidden;
+  }
+}
+
 @media screen and (max-width: 480px) {
   body {
     font-size: 16px;
   }
 }
+
+
 
 /* Regla CSS específica para la imagen */
 img {
@@ -134,11 +149,27 @@ img {
   height: auto;
 }
 
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 90%;
+  }
+}
 /* Regla CSS más general que también se aplica a la imagen */
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .bg-black\/20 {
+    max-width: 100% !important;
+  }
+}
+
+html, body, #root {
+  overflow-x: hidden;
+}
+
+
 
 .container img {
   max-width: 100%;

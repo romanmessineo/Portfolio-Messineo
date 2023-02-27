@@ -121,7 +121,7 @@ const Banner = () => {
                 <FaLinkedin className={styles.social} />
               </Link>
               <Link
-                to="mailto:elcorreoquequieres@correo.com?Subject=Portfolio%20"
+                to="mailto:messineoroman@gmail.com?Subject=Portfolio%20"
                 target="_blank"
                 title="g-mail"
               >
