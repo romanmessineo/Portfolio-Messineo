@@ -39,7 +39,7 @@ const Services = () => {
   };
 
   return (
-    <section className="section2 bg-contain" id="services">
+    <section className="section bg-contain" id="services">
       <div className="container mx-auto">
         {/* galeria */}
 
@@ -71,8 +71,10 @@ const Services = () => {
 
               Certificados
             </motion.p>
+
+
             {/* img coder */}
-            <div className="flex flex-col gap-y-8 md:flex-row items-center lg:gap-x-12 ">
+            <div className="flex  flex-col gap-y-8 md:flex-row items-center lg:gap-x-12 ">
               <motion.div
                 variants={fadeIn("right", 0.3)}
                 initial="hidden"
@@ -146,6 +148,9 @@ const Services = () => {
                 </div>
               )}
             </div>
+
+
+            
         <div className="flex flex-col px-12 ">
           <motion.div
             variants={fadeIn("right", 0.5)}
@@ -154,13 +159,13 @@ const Services = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-col lg:flex-row gap-x-12"
           >
-            <motion.div className="w-full lgl:w-1/2">
+           
+              <div className='mt-14 w-full flex flex-col gap-2'>
               <div className="pt-2 font-titleFont flex flex-col gap-2">
                 <h2 className="h3 text-3xl md:text-4xl font-bold text-center ">
                   Tecnologías utilizadas
                 </h2>
               </div>
-              <div className='className="mt-14 w-full flex flex-col gap-2'>
                 <div className="overflow-x-hidden">
                   <p className="h3 mb-[-10px] text-sm uppercase font-medium  ">
                     html
@@ -178,6 +183,7 @@ const Services = () => {
                     </span>
                   </VisibilitySensor>
                 </div>
+
                 <div className="overflow-x-hidden">
                   <p className="h3 mb-[-10px] text-sm uppercase font-medium">
                     css
@@ -195,6 +201,7 @@ const Services = () => {
                     </span>
                   </VisibilitySensor>
                 </div>
+
                 <div className="overflow-x-hidden">
                   <p className="h3 mb-[-10px] text-sm uppercase font-medium">
                     sass
@@ -212,6 +219,7 @@ const Services = () => {
                     </span>
                   </VisibilitySensor>
                 </div>
+
                 <div className="overflow-x-hidden">
                   <p className="h3 mb-[-10px] text-sm uppercase font-medium ">
                     javascript
@@ -229,6 +237,7 @@ const Services = () => {
                     </span>
                   </VisibilitySensor>
                 </div>
+
                 <div className="overflow-x-hidden">
                   <p className="h3 mb-[-10px] text-sm uppercase font-medium">
                     React Js
@@ -264,6 +273,7 @@ const Services = () => {
                     </span>
                   </VisibilitySensor>
                 </div>
+
                 <div className="overflow-x-hidden">
                   <p className="h3 mb-[-10px] text-sm uppercase font-medium">
                     Git
@@ -281,6 +291,7 @@ const Services = () => {
                     </span>
                   </VisibilitySensor>
                 </div>
+
                 <div className="overflow-x-hidden">
                   <p className="h3 mb-[-10px] text-sm uppercase font-medium">
                     firebase
@@ -298,9 +309,10 @@ const Services = () => {
                     </span>
                   </VisibilitySensor>
                 </div>
+
               </div>
             </motion.div>
-          </motion.div>
+          
 
 
 

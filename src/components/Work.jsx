@@ -24,13 +24,13 @@ const Work = () => {
           >
             {/* text */}
             <div className="flex flex-col">
-              <div className="max-w-sm mx-auto lg:max-w-none lg:w-2/3">
-                <h2 className="h2 leading-tight text-green-500 text-center lg:text-left">
+              <div className="max-w-sm mx-auto lg:max-w-none ">
+                <h2 className="h2 leading-tight text-green-500 text-left">
                   Mis
                   <br />
                   Trabajos
                 </h2>
-                <p className="p mb-6 text-center lg:text-left">
+                <p className="p mb-6 text-left">
                   Estos proyectos son mis primeros logros como desarrollador
                   Front-End, y fueron clave para graduarme en ConderHouse.
                   Actualmente estoy buscando oportunidades de trabajo tanto en
@@ -102,6 +102,9 @@ const Work = () => {
               </div>
             </div>
           </motion.div>
+
+
+          
           <motion.div
             variants={fadeIn("left", 0.2)}
             initial="hidden"

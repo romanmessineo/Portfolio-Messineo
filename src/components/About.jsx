@@ -1,11 +1,8 @@
 import React from "react";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
-import Img from "../assets/about.png";
-import styles from "../components/Banner.module.css";
+
 
 const About = () => {
   const linkConfig = {
@@ -13,12 +10,12 @@ const About = () => {
     spy: true,
   };
 
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-  });
+
 
   return (
-    <div className="section" id="about" ref={ref}>
+    <section className="section" id="about">
+
+
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* img */}
@@ -26,10 +23,12 @@ const About = () => {
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.7 }}
             // eslint-disable-next-line no-template-curly-in-string
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top "
-          ></motion.div>
+            className="flex-1 min-h-[350px] bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top "
+          >
+
+          </motion.div>
           {/* text */}
           <motion.div
             variants={fadeIn("left", 0.5)}
@@ -70,7 +69,9 @@ const About = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+
+
+    </section>
   );
 };
 
