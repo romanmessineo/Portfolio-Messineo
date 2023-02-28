@@ -103,8 +103,6 @@ const Work = () => {
             </div>
           </motion.div>
 
-
-          
           <motion.div
             variants={fadeIn("left", 0.2)}
             initial="hidden"
@@ -113,129 +111,127 @@ const Work = () => {
             className="flex-1 flex flex-col  lg:justify-end"
           >
             {/* image */}
-            
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                <video controls autoplay className=" w-full h-full">
-                  <source src={AppTransp} />
-                </video>
-                {/* pretittle */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 ">
+
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              <video controls autoplay className=" w-full h-full">
+                <source src={AppTransp} />
+              </video>
+              {/* pretittle */}
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 ">
+                <span
+                  className="text-gradient"
+                  style={{
+                    textShadow: "2px 2px 12px rgba(0, 0, 0, 0.8)",
+                    WebkitTextStroke: "1px #000",
+                    textStroke: "1px #000",
+                  }}
+                >
+                  Curso Javascrip - CoderHouse
+                </span>
+              </div>
+              {/* tittle */}
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                <span className="text-3xl text-white relative">
                   <span
-                    className="text-gradient"
+                    className="absolute inset-0"
                     style={{
-                      textShadow: "2px 2px 12px rgba(0, 0, 0, 0.8)",
-                      WebkitTextStroke: "1px #000",
-                      textStroke: "1px #000",
+                      backgroundColor: "rgba(0, 0, 0, 0.8)",
+                      filter: "blur(12px)",
+                      zIndex: "-1",
                     }}
-                  >
-                    Curso Javascrip - CoderHouse
-                  </span>
-                </div>
-                {/* tittle */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white relative">
-                    <span
-                      className="absolute inset-0"
-                      style={{
-                        backgroundColor: "rgba(0, 0, 0, 0.8)",
-                        filter: "blur(12px)",
-                        zIndex: "-1",
-                      }}
-                    ></span>
-                    App de transporte
-                  </span>
-                </div>
+                  ></span>
+                  App de transporte
+                </span>
               </div>
-              <div className="flex justify-center lg:mb-4">
-                <Link
-                  to="https://github.com/romanmessineo/Curso-Javascript/tree/feature-5"
-                  target="_blank"
-                  title="github"
-                  className="flex items-center mt-2 mr-4"
-                >
-                  <FaGithub className={`${styles.social} mr-2`} />
-                  <span className="text-white text-lg font-medium ml-1 mt-1">
-                    Ver código
-                  </span>
-                </Link>
-                <Link
-                  to="https://romanmessineo.github.io/Curso-Javascript/"
-                  target="_blank"
-                  title="web"
-                  className="flex items-center mt-2"
-                >
-                  <TbWorld className={`${styles.social} mr-2`} />
-                  <span className="text-white text-lg font-medium ml-1 mt-1">
-                    Visitar web
-                  </span>
-                </Link>
-              </div>
-            
+            </div>
+            <div className="flex justify-center lg:mb-4">
+              <Link
+                to="https://github.com/romanmessineo/Curso-Javascript/tree/feature-5"
+                target="_blank"
+                title="github"
+                className="flex items-center mt-2 mr-4"
+              >
+                <FaGithub className={`${styles.social} mr-2`} />
+                <span className="text-white text-lg font-medium ml-1 mt-1">
+                  Ver código
+                </span>
+              </Link>
+              <Link
+                to="https://romanmessineo.github.io/Curso-Javascript/"
+                target="_blank"
+                title="web"
+                className="flex items-center mt-2"
+              >
+                <TbWorld className={`${styles.social} mr-2`} />
+                <span className="text-white text-lg font-medium ml-1 mt-1">
+                  Visitar web
+                </span>
+              </Link>
+            </div>
+
             {/* image */}
 
-           
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                {/* video */}
-                <video controls autoplay>
-                  <source src={TeslaStore} />
-                </video>
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              {/* video */}
+              <video controls autoplay>
+                <source src={TeslaStore} />
+              </video>
 
-                {/* pretittle */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 ">
+              {/* pretittle */}
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 ">
+                <span
+                  className="text-gradient"
+                  style={{
+                    textShadow: "2px 2px 12px rgba(0, 0, 0, 0.8)",
+                    WebkitTextStroke: "1px #000",
+                    textStroke: "1px #000",
+                  }}
+                >
+                  Curso React Js - CoderHouse
+                </span>
+              </div>
+
+              {/* tittle */}
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                <span className="text-3xl text-white relative">
                   <span
-                    className="text-gradient"
+                    className="absolute inset-0"
                     style={{
-                      textShadow: "2px 2px 12px rgba(0, 0, 0, 0.8)",
-                      WebkitTextStroke: "1px #000",
-                      textStroke: "1px #000",
+                      backgroundColor: "rgba(0, 0, 0, 0.8)",
+                      filter: "blur(12px)",
+                      zIndex: "-1",
                     }}
-                  >
-                    Curso React Js - CoderHouse
-                  </span>
-                </div>
-
-                {/* tittle */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white relative">
-                    <span
-                      className="absolute inset-0"
-                      style={{
-                        backgroundColor: "rgba(0, 0, 0, 0.8)",
-                        filter: "blur(12px)",
-                        zIndex: "-1",
-                      }}
-                    ></span>
-                    Store de herramientas
-                  </span>
-                </div>
+                  ></span>
+                  Store de herramientas
+                </span>
               </div>
+            </div>
 
-              {/* links */}
-              <div className="flex justify-center">
-                <Link
-                  to="https://github.com/romanmessineo/curso-reactJs-Tesla-App/tree/main"
-                  target="_blank"
-                  title="github"
-                  className="flex items-center mt-2 mr-4"
-                >
-                  <FaGithub className={`${styles.social} mr-2`} />
-                  <span className="text-white text-lg font-medium ml-1 mt-1">
-                    Ver código
-                  </span>
-                </Link>
-                <Link
-                  to="https://teslastore-cursoreactjs.web.app/"
-                  target="_blank"
-                  title="web"
-                  className="flex items-center mt-2"
-                >
-                  <TbWorld className={`${styles.social} mr-2`} />
-                  <span className="text-white text-lg font-medium ml-1 mt-1">
-                    Visitar web
-                  </span>
-                </Link>
-              </div>
-            
+            {/* links */}
+            <div className="flex justify-center">
+              <Link
+                to="https://github.com/romanmessineo/curso-reactJs-Tesla-App/tree/main"
+                target="_blank"
+                title="github"
+                className="flex items-center mt-2 mr-4"
+              >
+                <FaGithub className={`${styles.social} mr-2`} />
+                <span className="text-white text-lg font-medium ml-1 mt-1">
+                  Ver código
+                </span>
+              </Link>
+              <Link
+                to="https://teslastore-cursoreactjs.web.app/"
+                target="_blank"
+                title="web"
+                className="flex items-center mt-2"
+              >
+                <TbWorld className={`${styles.social} mr-2`} />
+                <span className="text-white text-lg font-medium ml-1 mt-1">
+                  Visitar web
+                </span>
+              </Link>
+            </div>
           </motion.div>
         </div>
       </div>

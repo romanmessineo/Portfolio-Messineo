@@ -24,7 +24,6 @@ const Banner = () => {
   const linkConfig = {
     smooth: true,
   };
-  
 
   return (
     <section
@@ -142,7 +141,7 @@ const Banner = () => {
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }} 
+            viewport={{ once: false, amount: 0.7 }}
             className="hidden lg:flex flex-1 max-w-[260px] lg:max-w-[360px] "
           >
             <img

@@ -222,6 +222,7 @@ const Contact = () => {
               placeholder="Escriba su mensaje"
               value={formValues.message}
               onChange={handleInputChange}
+              maxLength={86}
             ></textarea>
             <button
               className="btn btn-lg"
