@@ -114,7 +114,7 @@ const Banner = () => {
                 <FaGithub className={styles.social} />
               </Link>
               <Link
-                to="https://www.linkedin.com/in/rom%C3%A1n-messineo/"
+                to="https://www.linkedin.com/in/roman-messineo/"
                 target="_blank"
                 title="linkedin"
               >
