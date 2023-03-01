@@ -136,7 +136,7 @@ const Contact = () => {
                       <FaGithub className={styles.social} />
                     </Link>
                     <Link
-                      to="https://www.linkedin.com/in/rom%C3%A1n-messineo-591876183/"
+                      to="https://www.linkedin.com/in/rom%C3%A1n-messineo/"
                       target="_blank"
                       title="linkedin"
                     >
@@ -169,6 +169,7 @@ const Contact = () => {
                     >
                       <BsDownload className="mr-2" />
                       <span className="p">Descargar CV</span>
+                      {/*link de CV= https://www.canva.com/design/DAFb3mQYRvY/dxScbkISUllnQB9SFbMQnw/view?utm_content=DAFb3mQYRvY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink */}
                     </Link>
                   </button>
                 </div>
