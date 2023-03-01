@@ -67,10 +67,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="p mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Autodidacta que acaba de graduarse de CoderHouse. Aunque tengo
-              poca experiencia, siempre he sentido fascinación por el desarrollo
-              web y me gusta estar actualizado sobre las últimas tendencias y
-              tecnologías.
+              Autodidacta que acaba de graduarse de CoderHouse. Tengo 1 año de
+              experiencia en proyectos para pequeños negocios. Siempre he
+              sentido fascinación por el desarrollo web y me gusta estar
+              actualizado sobre las últimas tendencias y tecnologías.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
